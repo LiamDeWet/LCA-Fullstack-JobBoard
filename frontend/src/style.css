@@ -1,0 +1,254 @@
+/* ============================================================
+   JOBBOARD ZA - GLOBAL STYLES
+   ============================================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #222;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+header h1 {
+  margin-bottom: 5px;
+}
+
+header p {
+  color: #666;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-form button,
+.status-message button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+.jobs {
+  display: grid;
+  gap: 20px;
+}
+
+.job-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.job-card h3 {
+  margin-top: 0;
+}
+
+.company {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.poster {
+  margin-top: 20px;
+}
+
+.status-message {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.error {
+  border-left: 4px solid #d33;
+}
+
+@media (max-width: 600px) {
+  .search-form {
+    flex-direction: column;
+  }
+}
+
+.post-job {
+  background: white;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.post-job button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+}
+
+.post-job button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-error {
+  padding: 10px;
+  background: #ffe5e5;
+  color: #b00020;
+  border-radius: 5px;
+}
+
+.form-success {
+  padding: 10px;
+  background: #e5ffe5;
+  color: #176b17;
+  border-radius: 5px;
+}
+
+.job-actions {
+  margin-top: 20px;
+}
+
+.job-actions button {
+  padding: 9px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-form {
+  width: 100%;
+}
+
+.edit-form h3 {
+  margin-top: 0;
+}
+
+.edit-form .form-group {
+  margin-bottom: 15px;
+}
+
+.edit-form input,
+.edit-form textarea {
+  width: 100%;
+}
+
+.job-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.job-actions button {
+  padding: 9px 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+.job-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+button {
+  background: #222;
+  color: white;
+  transition: opacity 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.section-header {
+  margin-bottom: 20px;
+}
+
+.section-header h2 {
+  margin-bottom: 5px;
+}
+
+.section-header p {
+  color: #666;
+}
+
+.job-card {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 600px) {
+  .app {
+    width: 95%;
+    padding: 20px 0;
+  }
+
+  .job-card,
+  .post-job {
+    padding: 15px;
+  }
+
+  .job-actions {
+    flex-direction: column;
+  }
+
+  .job-actions button {
+    width: 100%;
+  }
+}
