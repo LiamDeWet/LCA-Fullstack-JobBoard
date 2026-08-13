@@ -60,25 +60,29 @@ git clone https://github.com/LiamDeWet/LCA-JobBoard-ZA.git
 
 Then move into project folder
 
-```cd LCA-JobBoard-ZA
+```
+cd LCA-JobBoard-ZA
 
 ```
 
 Go into the respective folders (backend or frontend) and run:
 
-```npm install
+```
+npm install
 
 ```
 
 For the backend startup run:
 
-```npm start
+```
+npm start
 
 ```
 
-Fro frontend startup run:
+For frontend startup run:
 
-```npm run dev
+```
+npm run dev
 
 ```
 
